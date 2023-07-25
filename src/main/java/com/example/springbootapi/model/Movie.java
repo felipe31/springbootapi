@@ -8,22 +8,38 @@ public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Integer year;
+    private Integer _year;
 
-    private String title;
     @Column(nullable = false)
+    private String title;
     private String studios, producers;
     private boolean winner = false;
+
+    public Movie(Integer year, String title, String studios, String producers) {
+        this._year = year;
+        this.title = title;
+        this.studios = studios;
+        this.producers = producers;
+    }
+
+    public Movie(Integer year, String title, String studios, String producers, boolean winner) {
+        this._year = year;
+        this.title = title;
+        this.studios = studios;
+        this.producers = producers;
+        this.winner = winner;
+    }
+
     public Long getId() {
         return id;
     }
 
-    public Integer getYear() {
-        return year;
+    public Integer get_year() {
+        return _year;
     }
 
-    public void setYear(Integer year) {
-        this.year = year;
+    public void set_year(Integer _year) {
+        this._year = _year;
     }
 
     public String getTitle() {
