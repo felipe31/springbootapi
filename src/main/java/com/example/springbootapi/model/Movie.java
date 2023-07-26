@@ -15,6 +15,9 @@ public class Movie {
     private String studio, producer;
     private boolean winner = false;
 
+    public Movie() {
+    }
+
     public Movie(Integer year, String title, String studio, String producer) {
         this._year = year;
         this.title = title;
