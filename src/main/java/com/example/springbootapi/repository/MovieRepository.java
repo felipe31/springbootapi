@@ -9,8 +9,8 @@ import java.util.List;
 
 @Repository
 public interface MovieRepository extends JpaRepository<Movie, Long> {
-    @Query(value = "select producer from Movie where winner is true", nativeQuery = true)
-    List<Object> findWinnerProducers();
+    @Query(value = "select distinct producer from Movie where winner is true", nativeQuery = true)
+    List<Object> findWinningProducers();
     @Query(value =
             "WITH ordered_movies AS (" +
                 "SELECT *, row_number() over (ORDER BY producer, _year) as rn " +

@@ -26,13 +26,13 @@ class SpringBootAPIApplicationTests {
 	@BeforeEach
 	public void setup() {
 		movieRepository.deleteAll();
-		movieRepository.save(new Movie(1990, "Title 1", "Studio 1", "Not consecutive Producer 1", true));
-		movieRepository.save(new Movie(1990, "Title 2", "Studio 1", "Not consecutive Producer 1", false));
-		movieRepository.save(new Movie(1990, "Title 3", "Studio 1", "Not consecutive Producer 1", true));
-
-		movieRepository.save(new Movie(1990, "Title 4", "Studio 2", "Not consecutive Producer 2", true));
-		movieRepository.save(new Movie(1991, "Title 5", "Studio 2", "Not consecutive Producer 2", false));
-		movieRepository.save(new Movie(2011, "Title 6", "Studio 2", "Not consecutive Producer 2", true));
+//		movieRepository.save(new Movie(1990, "Title 1", "Studio 1", "Not consecutive Producer 1", true));
+//		movieRepository.save(new Movie(1990, "Title 2", "Studio 1", "Not consecutive Producer 1", false));
+//		movieRepository.save(new Movie(1990, "Title 3", "Studio 1", "Not consecutive Producer 1", true));
+//
+//		movieRepository.save(new Movie(1990, "Title 4", "Studio 2", "Not consecutive Producer 2", true));
+//		movieRepository.save(new Movie(1991, "Title 5", "Studio 2", "Not consecutive Producer 2", false));
+//		movieRepository.save(new Movie(2011, "Title 6", "Studio 2", "Not consecutive Producer 2", true));
 
 		movieRepository.save(new Movie(2001, "Title 7", "Studio 3", "Consecutive Producer 1", true));
 		movieRepository.save(new Movie(2022, "Title 8", "Studio 3", "Consecutive Producer 1", true));

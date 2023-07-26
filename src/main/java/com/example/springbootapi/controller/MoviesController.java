@@ -22,10 +22,10 @@ public class MoviesController {
     public List<Movie> list() {
         return movieRepository.findAll();
     }
-    @GetMapping("/winner-producers")
+    @GetMapping("/winning-producers")
     @ResponseStatus(HttpStatus.OK)
-    public Object winnerProducers() {
-        return movieRepository.findWinnerProducers();
+    public Object winningProducers() {
+        return movieRepository.findWinningProducers();
     }
 
     @GetMapping("/consecutive-winners")
