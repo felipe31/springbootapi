@@ -26,6 +26,10 @@ public class CsvService {
             String[] lineData = line.split(";");
 
             try {
+                if(lineData.length < 4) {
+                    throw new Exception("Data missing to the line: " + line);
+                }
+
                 Movie movie = new Movie(Integer.valueOf(lineData[0]), lineData[1], lineData[2], lineData[3]);
 
                 if(lineData.length > 4) {
