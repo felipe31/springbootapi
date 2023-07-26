@@ -12,21 +12,21 @@ public class Movie {
 
     @Column(nullable = false)
     private String title;
-    private String studios, producers;
+    private String studio, producer;
     private boolean winner = false;
 
-    public Movie(Integer year, String title, String studios, String producers) {
+    public Movie(Integer year, String title, String studio, String producer) {
         this._year = year;
         this.title = title;
-        this.studios = studios;
-        this.producers = producers;
+        this.studio = studio;
+        this.producer = producer;
     }
 
-    public Movie(Integer year, String title, String studios, String producers, boolean winner) {
+    public Movie(Integer year, String title, String studio, String producer, boolean winner) {
         this._year = year;
         this.title = title;
-        this.studios = studios;
-        this.producers = producers;
+        this.studio = studio;
+        this.producer = producer;
         this.winner = winner;
     }
 
@@ -50,20 +50,20 @@ public class Movie {
         this.title = title;
     }
 
-    public String getStudios() {
-        return studios;
+    public String getStudio() {
+        return studio;
     }
 
-    public void setStudios(String studios) {
-        this.studios = studios;
+    public void setStudio(String studio) {
+        this.studio = studio;
     }
 
-    public String getProducers() {
-        return producers;
+    public String getProducer() {
+        return producer;
     }
 
-    public void setProducers(String producers) {
-        this.producers = producers;
+    public void setProducer(String producer) {
+        this.producer = producer;
     }
 
     public boolean isWinner() {
