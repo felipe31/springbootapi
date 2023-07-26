@@ -20,7 +20,7 @@ $ mvn spring-boot:run
 ```
 Once running, it will import all data in the `movielist.csv`.
 
-To customize it, edit the `csv.file.path` field of the `src/main/resources/application.properties` file.  
+To customize it, edit the `csv.file.path` field of the [`src/main/resources/application.properties`](src/main/resources/application.properties) file.  
 
 ### Endpoints
 By default, Tomcat starts the web server on port 8080.
@@ -30,12 +30,12 @@ You can list all movies by accessing:
 GET /movies
 ```
 
-You can list of all winning producers on:
+You can list all winning producers here:
 ```
 GET /winning-producers
 ```
 
-You can list all producers that won a prize consecutively by minimum and maximum interval on:
+You can list all producers that won a prize consecutively by minimum and maximum interval here:
 ```
 GET /consecutive-winners
 ```
