@@ -62,3 +62,10 @@ The latter comes in the following format:
     ]
 }
 ```
+
+## Improvements
+
+The `producers` column in the `csv` file includes more than one producer in most cases.
+Therefore, a nice improvement would be to parse them into a `Producers` table.
+
+This new table would make it easier to search for individual producer information.

@@ -10,6 +10,9 @@ import java.util.Map;
 @Service
 public class MovieService {
 
+
+
+
     public Object buildConsecutivePrizeIntervalObject(List<List<Object>> consecutiveWinners) {
 
         Map<String, List<Map<String, Object>>> prizesInterval = new HashMap<>();
